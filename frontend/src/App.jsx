@@ -6,17 +6,17 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute"
 
-const Logout = () => {
+const Logout = ()  => {
   localStorage.clear()
   return <Navigate to="/login" />
 }
 
-const RegisterAndLogout = () => {
+function RegisterAndLogout() {
   localStorage.clear()
   return <Register />
 }
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
       <Routes>

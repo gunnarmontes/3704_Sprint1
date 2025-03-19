@@ -1,0 +1,17 @@
+# Ignore Python Virtual Environment
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Ignore Node Modules (for React frontend)
+node_modules/
+build/
+
+# Ignore Environment Files
+.env
+*.sqlite3
+
+# Ignore IDE and OS Files
+.DS_Store
+.vscode/
