@@ -1,77 +1,114 @@
-README Currently Unformated click to edit file for more readable formatting
+README
 
-#Running requirements
-Install python
+Running Requirements
 
-Create virtual enviroment in sprint1 directory
+Install Python
 
-Install files in requirements folder:
-pip install -r requirements.txt 
+Create a virtual environment in the sprint1 directory.
 
-Host backend while in backend directory: 
-Python manage.py runserver 
+Install required dependencies from the requirements.txt file:
 
-Host frontend in a different terminal with: 
+pip install -r requirements.txt
+
+Start the backend (while in the backend directory):
+
+python manage.py runserver
+
+Start the frontend (in a different terminal):
+
 npm run dev
 
-Click the local host link that is outputed after running npm run dev
+Access the application:
 
-#Functionality testing instructions
+Click the local host link that appears after running npm run dev.
 
-1. Register a new user
+Functionality Testing Instructions
 
-  -Upon launch taken to a login screen
-  -Click Register here to go to register page
-    ;taken to: url: http://localhost:5175/register
-  -Set a username and passwork (current convetion: name-userX password: X) 
-    Ex: Username: user1, Password: 1
-    ;taken to: url: http://localhost:5175/login
-  Restricitons:  
-    -User can not be registered if there is another user with the same name
-2. Login with registered user
-    -With any user you register type the corresponding name and password into text     
-     fields
-    -Click login button
-    ;taken to: url: http://localhost:5175/ (home page)
-    Restrictions:
-    -Cant login with empty profile
-    -Cant login with user that does not exist
-    -Cant login with a username and password that don't go together
-3.User functions walkthrough
-  -Greeted with Welcome <username>
-  -Favorite songs list is intialized as empty
-  **Add song**
-  -Enter text into song name box
-  -Enter text into artist box
-  -Click submit
-  Text under "Favorite songs" updated based on input.
-  No limit on the number of songs that can be added 
-  Requiremnts:
-    -Both fields must be filled out
-   **Delete Song**
-   -Click delete button under correspnding song
-   Song gets deleted from users favorite song list
-   **Logout**
-     -Click logout button
-     
-    Takes user back to login screen, clearing local storage to protect users         
-    access token
-    ;taken to: url: http://localhost:5175/login
-   
+1. Register a New User
 
-4. Program memory notes
-   No functioning external database so any users registered are unique to the systems      local storage.
-   Any functions performed by a User in the "home" page are saved after loggin out
-   Ex:
-   -User adds song
-   -User logs out
-   -User signs back in
-   The song that was added should still be displayed under favorite song 
-   
-   
-  
-  
-  
-  
-    
-    
+Upon launch, you are taken to the login screen.
+
+Click Register here to navigate to the registration page:
+
+URL: http://localhost:5175/register
+
+Set a username and password (current convention: name-userX and password: X).
+
+Example: Username: user1, Password: 1
+
+Redirects to: http://localhost:5175/login
+
+Restrictions:
+
+Cannot register if a user with the same name already exists.
+
+2. Login with a Registered User
+
+Enter the username and password into the text fields.
+
+Click the login button.
+
+Redirects to: http://localhost:5175/ (Home Page)
+
+Restrictions:
+
+Cannot log in with an empty profile.
+
+Cannot log in with a non-existent user.
+
+Cannot log in with incorrect username-password combinations.
+
+3. User Functions Walkthrough
+
+The home page greets the user with: "Welcome, <username>".
+
+The Favorite Songs List is initially empty.
+
+Add Song
+
+Enter text into the song name input field.
+
+Enter text into the artist input field.
+
+Click Submit.
+
+The song will appear under "Favorite Songs".
+
+No limit on the number of songs that can be added.
+
+Requirements:
+
+Both fields must be filled out before submission.
+
+Delete Song
+
+Click the Delete button under the corresponding song.
+
+The song gets removed from the user's favorite songs list.
+
+Logout
+
+Click the Logout button.
+
+The user is redirected to the login screen.
+
+Local storage is cleared to protect the access token.
+
+Redirects to: http://localhost:5175/login
+
+4. Program Memory Notes
+
+There is no functioning external database; all user data is stored in the system’s local storage.
+
+Any actions performed on the home page persist after logging out.
+
+Example:
+
+User adds a song.
+
+User logs out.
+
+User logs back in.
+
+The previously added song is still displayed in the favorite songs list.
+\
