@@ -8,15 +8,15 @@ Create a virtual environment in the sprint1 directory.
 
 Install required dependencies from the requirements.txt file:
 
-pip install -r requirements.txt
+cmd: pip install -r requirements.txt
 
 Start the backend (while in the backend directory):
 
-python manage.py runserver
+cmd: python manage.py runserver
 
 Start the frontend (in a different terminal):
 
-npm run dev
+cmd: npm run dev
 
 Access the application:
 
